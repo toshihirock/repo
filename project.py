@@ -1896,6 +1896,7 @@ class Project(object):
     return ok
 
   def _FetchBundle(self, srcUrl, tmpPath, dstPath, quiet):
+    return False
     if os.path.exists(dstPath):
       os.remove(dstPath)
 
